@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner Key = new Scanner(System.in);
-        System.out.println("Enter a number:");
+        Scanner key = new Scanner(System.in);
+        System.out.println("Enter your number here: ");
 
-        int num1 = Key.nextInt();
+        int num1 = key.nextInt();
 
-        for (int i = 1; i  < num1; i++ ){
-            System.out.println(i);
+        for (int i = 1; i <= num1; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i + " is even");
+            } else if (i % 2 == 1) {
+                System.out.println(i + " is odd");
+            }
         }
-        if(num1%2 == 0) {
-            System.out.println(num1 + " is an even number");
-        }
-        else if (num1%2 == 1)
-            System.out.println(num1 + " is odd");
     }
 }
+
